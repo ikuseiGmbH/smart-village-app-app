@@ -99,7 +99,7 @@ export const AppStackNavigator = (headerRight = true) => {
         options={{ title: texts.screenTitles.wasteCollection }}
       />
       <Stack.Screen name="Weather" component={WeatherScreen} />
-      <Stack.Screen name="Web" component={WebScreen} />
+      <Stack.Screen name="Web" component={WebScreen} options={screenOptionsWithShare(headerRight)} />
     </Stack.Navigator>
   );
 };
